@@ -1,5 +1,7 @@
 @charset "UTF-8";
-/* Global Reset CSS */
+/**
+* Eric Meyer's Reset CSS v2.0
+*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -19,34 +21,6 @@ time, mark, audio, video, input, textarea {
   font: inherit;
   font-size: 100%;
   vertical-align: baseline;
-}
-
-/* Add responsive CSS here */
-@media only screen and (max-width: 768px) {
-  body {
-    font-size: 16px; /* You can adjust the base font size to your liking */
-  }
-
-  .menu {
-    margin: 10px 0;
-  }
-}
-
-/* Tablet styles (768px to 991px) */
-@media (min-width: 768px) and (max-width: 991px) {
-  body {
-    font-size: 18px; /* You can adjust the font size for tablets */
-  }
-}
-
-/* Larger desktop styles (992px and above) */
-@media (min-width: 992px) {
-  body {
-    font-size: 20px; /* You can adjust the font size for larger screens */
-  }
-
-  /* Add any additional responsive styles here */
-  /* For example, adjusting layout and dimensions for larger screens */
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -134,11 +108,11 @@ sub {
   vertical-align: text-bottom;
 }
 .no-space-between-inline-blocks {
-  letter-spacing: normal; /reset IE < 8/
-  letter-spacing: -0.31em; /webkit/
-  word-spacing: -0.43em; /IE < 8 && gecko/
+  *letter-spacing: normal; /*reset IE < 8*/
+  letter-spacing: -0.31em; /*webkit*/
+  word-spacing: -0.43em; /*IE < 8 && gecko*/
 }
-/restore spacing on inner elements/
+/*restore spacing on inner elements*/
 .no-space-between-inline-blocks > * {
   letter-spacing: normal;
   word-spacing: normal;
@@ -163,16 +137,20 @@ html {
   font-size: 16px;
 }
 body {
-  min-width: 320px;
-  max-width: 1920px;
+  min-width: 1920px;
   color: #1c4954;
   font-family: Poppins, sans-serif;
-  font-size: 1.355rem; /* 21.68px / 16px = 1.355rem */
+  font-size: 1.354994rem; /* 21.68px / 16px = 1.355rem */
   font-style: normal;
   font-weight: normal;
   letter-spacing: 0;
   text-decoration: none;
+}
+body {
+  float: none;
+  height: auto;
   margin: 0 auto;
+  position: relative;
   width: 100%; /* 1920px / 1920px = 100% */
 }
 .background {
@@ -302,8 +280,8 @@ body {
   height: 2px;
   margin: 10px auto 0;
   max-width: 1920px;
-  border-top: 1px solid rgba(16, 57, 63, 0.45); /stroke/
-  border-bottom: 1px solid rgba(16, 57, 63, 0.45); /stroke/
+  border-top: 1px solid rgba(16, 57, 63, 0.45); /*stroke*/
+  border-bottom: 1px solid rgba(16, 57, 63, 0.45); /*stroke*/
 }
 .image-text {
   height: 731px;
@@ -403,7 +381,7 @@ body {
   position: relative;
   width: 212px;
   z-index: 39;
-  border: 1px solid #f3a01e; /stroke/
+  border: 1px solid #f3a01e; /*stroke*/
 }
 .group-7 {
   margin: 29px 0 0 5px;
@@ -441,7 +419,7 @@ body {
   position: relative;
   width: 218px;
   z-index: 40;
-  border: 1px solid #1c4954; /stroke/
+  border: 1px solid #1c4954; /*stroke*/
   -webkit-border-radius: 22.5px;
   -moz-border-radius: 22.5px;
   border-radius: 22.5px;
@@ -458,7 +436,7 @@ body {
   height: 201px;
   position: relative;
   width: 201px;
-  border: 1px solid #10393f; /stroke/
+  border: 1px solid #10393f; /*stroke*/
   -webkit-border-radius: 100.74px;
   -moz-border-radius: 100.74px;
   border-radius: 100.74px;
@@ -469,7 +447,7 @@ body {
   position: absolute;
   top: 94px;
   width: 11px;
-  border: 1px solid #10393f; /stroke/
+  border: 1px solid #10393f; /*stroke*/
   -webkit-border-radius: 5.63px 5.62px 5.62px 5.63px/5.63px 5.63px 5.62px 5.62px;
   -moz-border-radius: 5.63px 5.62px 5.62px 5.63px/5.63px 5.63px 5.62px 5.62px;
   border-radius: 5.63px 5.62px 5.62px 5.63px/5.63px 5.63px 5.62px 5.62px;
@@ -737,13 +715,13 @@ body {
   margin: 0 auto;
   padding: 17px 0 18px;
   position: relative;
-  border: 1px solid #10393f; /stroke/
+  border: 1px solid #10393f; /*stroke*/
   -webkit-border-radius: 44.5px;
   -moz-border-radius: 44.5px;
   border-radius: 44.5px;
   -webkit-box-shadow: -13.5px 0 17.28px 0.72px rgba(0, 0, 0, 0.23);
   -moz-box-shadow: -13.5px 0 17.28px 0.72px rgba(0, 0, 0, 0.23);
-  box-shadow: -13.5px 0 17.28px 0.72px rgba(0, 0, 0, 0.23); /drop shadow/
+  box-shadow: -13.5px 0 17.28px 0.72px rgba(0, 0, 0, 0.23); /*drop shadow*/
 }
 .rectangle-5-copy-4 {
   display: block;
@@ -771,13 +749,13 @@ body {
   margin: 0 auto;
   padding: 17px 0 18px;
   position: relative;
-  border: 1px solid #10393f; /stroke/
+  border: 1px solid #10393f; /*stroke*/
   -webkit-border-radius: 44.5px;
   -moz-border-radius: 44.5px;
   border-radius: 44.5px;
   -webkit-box-shadow: -13.5px 0 17.28px 0.72px rgba(0, 0, 0, 0.23);
   -moz-box-shadow: -13.5px 0 17.28px 0.72px rgba(0, 0, 0, 0.23);
-  box-shadow: -13.5px 0 17.28px 0.72px rgba(0, 0, 0, 0.23); /drop shadow/
+  box-shadow: -13.5px 0 17.28px 0.72px rgba(0, 0, 0, 0.23); /*drop shadow*/
 }
 .rectangle-5-copy-5 {
   display: block;
@@ -803,13 +781,13 @@ body {
 .rectangle-5-copy-2-holder {
   padding: 18px 0;
   position: relative;
-  border: 1px solid #10393f; /stroke/
+  border: 1px solid #10393f; /*stroke*/
   -webkit-border-radius: 44.5px;
   -moz-border-radius: 44.5px;
   border-radius: 44.5px;
   -webkit-box-shadow: -13.5px 0 17.28px 0.72px rgba(0, 0, 0, 0.23);
   -moz-box-shadow: -13.5px 0 17.28px 0.72px rgba(0, 0, 0, 0.23);
-  box-shadow: -13.5px 0 17.28px 0.72px rgba(0, 0, 0, 0.23); /drop shadow/
+  box-shadow: -13.5px 0 17.28px 0.72px rgba(0, 0, 0, 0.23); /*drop shadow*/
 }
 .rectangle-5-copy-6 {
   display: block;
@@ -836,13 +814,13 @@ body {
 .rectangle-5-copy-3-holder {
   padding: 17px 0 18px;
   position: relative;
-  border: 1px solid #10393f; /stroke/
+  border: 1px solid #10393f; /*stroke*/
   -webkit-border-radius: 44.5px;
   -moz-border-radius: 44.5px;
   border-radius: 44.5px;
   -webkit-box-shadow: -13.5px 0 17.28px 0.72px rgba(0, 0, 0, 0.23);
   -moz-box-shadow: -13.5px 0 17.28px 0.72px rgba(0, 0, 0, 0.23);
-  box-shadow: -13.5px 0 17.28px 0.72px rgba(0, 0, 0, 0.23); /drop shadow/
+  box-shadow: -13.5px 0 17.28px 0.72px rgba(0, 0, 0, 0.23); /*drop shadow*/
 }
 .rectangle-5-copy-7 {
   display: block;
@@ -889,13 +867,13 @@ body {
   padding: 38px 0;
   position: relative;
   width: 148px;
-  border: 1px solid #10393f; /stroke/
+  border: 1px solid #10393f; /*stroke*/
   -webkit-border-radius: 44.5px;
   -moz-border-radius: 44.5px;
   border-radius: 44.5px;
   -webkit-box-shadow: -13.5px 0 17.28px 0.72px rgba(0, 0, 0, 0.23);
   -moz-box-shadow: -13.5px 0 17.28px 0.72px rgba(0, 0, 0, 0.23);
-  box-shadow: -13.5px 0 17.28px 0.72px rgba(0, 0, 0, 0.23); /drop shadow/
+  box-shadow: -13.5px 0 17.28px 0.72px rgba(0, 0, 0, 0.23); /*drop shadow*/
 }
 .shape-7 {
   display: block;
@@ -918,13 +896,13 @@ body {
   padding: 36px 0 23px;
   position: relative;
   width: 148px;
-  border: 1px solid #10393f; /stroke/
+  border: 1px solid #10393f; /*stroke*/
   -webkit-border-radius: 44.5px;
   -moz-border-radius: 44.5px;
   border-radius: 44.5px;
   -webkit-box-shadow: -13.5px 0 17.28px 0.72px rgba(0, 0, 0, 0.23);
   -moz-box-shadow: -13.5px 0 17.28px 0.72px rgba(0, 0, 0, 0.23);
-  box-shadow: -13.5px 0 17.28px 0.72px rgba(0, 0, 0, 0.23); /drop shadow/
+  box-shadow: -13.5px 0 17.28px 0.72px rgba(0, 0, 0, 0.23); /*drop shadow*/
 }
 .shape-8 {
   display: block;
@@ -947,13 +925,13 @@ body {
   padding: 45px 0 47px;
   position: relative;
   width: 148px;
-  border: 1px solid #10393f; /stroke/
+  border: 1px solid #10393f; /*stroke*/
   -webkit-border-radius: 44.5px;
   -moz-border-radius: 44.5px;
   border-radius: 44.5px;
   -webkit-box-shadow: -13.5px 0 17.28px 0.72px rgba(0, 0, 0, 0.23);
   -moz-box-shadow: -13.5px 0 17.28px 0.72px rgba(0, 0, 0, 0.23);
-  box-shadow: -13.5px 0 17.28px 0.72px rgba(0, 0, 0, 0.23); /drop shadow/
+  box-shadow: -13.5px 0 17.28px 0.72px rgba(0, 0, 0, 0.23); /*drop shadow*/
 }
 .shape-9 {
   display: block;
@@ -1213,13 +1191,13 @@ body {
   padding: 36px 0 17px;
   position: relative;
   width: 194px;
-  border: 1px solid #10393f; /stroke/
+  border: 1px solid #10393f; /*stroke*/
   -webkit-border-radius: 44.5px;
   -moz-border-radius: 44.5px;
   border-radius: 44.5px;
   -webkit-box-shadow: -13.5px 0 17.28px 0.72px rgba(0, 0, 0, 0.23);
   -moz-box-shadow: -13.5px 0 17.28px 0.72px rgba(0, 0, 0, 0.23);
-  box-shadow: -13.5px 0 17.28px 0.72px rgba(0, 0, 0, 0.23); /drop shadow/
+  box-shadow: -13.5px 0 17.28px 0.72px rgba(0, 0, 0, 0.23); /*drop shadow*/
 }
 .service {
   display: block;
@@ -1245,13 +1223,13 @@ body {
   padding: 24px 0 20px;
   position: relative;
   width: 194px;
-  border: 1px solid #10393f; /stroke/
+  border: 1px solid #10393f; /*stroke*/
   -webkit-border-radius: 44.5px;
   -moz-border-radius: 44.5px;
   border-radius: 44.5px;
   -webkit-box-shadow: -13.5px 0 17.28px 0.72px rgba(0, 0, 0, 0.23);
   -moz-box-shadow: -13.5px 0 17.28px 0.72px rgba(0, 0, 0, 0.23);
-  box-shadow: -13.5px 0 17.28px 0.72px rgba(0, 0, 0, 0.23); /drop shadow/
+  box-shadow: -13.5px 0 17.28px 0.72px rgba(0, 0, 0, 0.23); /*drop shadow*/
 }
 .clipboard {
   display: block;
@@ -1277,13 +1255,13 @@ body {
   padding: 23px 0 16px;
   position: relative;
   width: 194px;
-  border: 1px solid #10393f; /stroke/
+  border: 1px solid #10393f; /*stroke*/
   -webkit-border-radius: 44.5px;
   -moz-border-radius: 44.5px;
   border-radius: 44.5px;
   -webkit-box-shadow: -13.5px 0 17.28px 0.72px rgba(0, 0, 0, 0.23);
   -moz-box-shadow: -13.5px 0 17.28px 0.72px rgba(0, 0, 0, 0.23);
-  box-shadow: -13.5px 0 17.28px 0.72px rgba(0, 0, 0, 0.23); /drop shadow/
+  box-shadow: -13.5px 0 17.28px 0.72px rgba(0, 0, 0, 0.23); /*drop shadow*/
 }
 .cooperation {
   display: block;
